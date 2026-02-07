@@ -1,9 +1,6 @@
 # Node.js dependencies
 node_modules/
 
-# WhatsApp session (LocalAuth)
-session/
-
 # Logok
 *.log
 
@@ -14,3 +11,10 @@ Thumbs.db
 # Temp / cache
 tmp/
 *.tmp
+
+# WhatsApp session (NAGYON FONTOS)
+session/
+
+# Environment változók
+.env
+

@@ -1,2 +1,22 @@
-2026/02/04-11:58:53.046 206c Creating DB C:\whatsappv2\session\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb since it was missing.
-2026/02/04-11:58:53.062 206c Reusing MANIFEST C:\whatsappv2\session\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/02/07-07:31:42.589 af4 Reusing MANIFEST C:\whatsappv2\session\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/02/07-07:31:42.590 af4 Recovering log #341
+2026/02/07-07:31:42.625 af4 Reusing old log C:\whatsappv2\session\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000341.log 
+2026/02/07-07:31:44.868 af4 Level-0 table #351: started
+2026/02/07-07:31:44.896 af4 Level-0 table #351: 1243168 bytes OK
+2026/02/07-07:31:44.901 af4 Delete type=0 #341
+2026/02/07-07:31:45.069 270c Compacting 1@1 + 6@2 files
+2026/02/07-07:31:45.125 270c Generated table #352@1: 47583 keys, 2181074 bytes
+2026/02/07-07:31:45.179 270c Generated table #353@1: 101369 keys, 2250959 bytes
+2026/02/07-07:31:45.216 270c Generated table #354@1: 54579 keys, 2212967 bytes
+2026/02/07-07:31:45.237 270c Generated table #355@1: 3948 keys, 2162784 bytes
+2026/02/07-07:31:45.269 270c Generated table #356@1: 24969 keys, 2221759 bytes
+2026/02/07-07:31:45.288 270c Generated table #357@1: 17183 keys, 1019012 bytes
+2026/02/07-07:31:45.288 270c Compacted 1@1 + 6@2 files => 12048555 bytes
+2026/02/07-07:31:45.291 270c compacted to: files[ 0 0 6 0 0 0 0 ]
+2026/02/07-07:31:45.291 270c Delete type=2 #343
+2026/02/07-07:31:45.291 270c Delete type=2 #344
+2026/02/07-07:31:45.291 270c Delete type=2 #345
+2026/02/07-07:31:45.291 270c Delete type=2 #346
+2026/02/07-07:31:45.291 270c Delete type=2 #347
+2026/02/07-07:31:45.291 270c Delete type=2 #348
+2026/02/07-07:31:45.291 270c Delete type=2 #351

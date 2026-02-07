@@ -1,2 +1,6 @@
-2026/02/04-11:58:51.663 3b14 Creating DB C:\whatsappv2\session\session\Default\Local Storage\leveldb since it was missing.
-2026/02/04-11:58:51.700 3b14 Reusing MANIFEST C:\whatsappv2\session\session\Default\Local Storage\leveldb/MANIFEST-000001
+2026/02/07-07:31:42.048 2228 Reusing MANIFEST C:\whatsappv2\session\session\Default\Local Storage\leveldb/MANIFEST-000001
+2026/02/07-07:31:42.056 2228 Recovering log #4
+2026/02/07-07:31:42.059 2228 Reusing old log C:\whatsappv2\session\session\Default\Local Storage\leveldb/000004.log 
+2026/02/07-07:32:42.077 178c Level-0 table #8: started
+2026/02/07-07:32:42.084 178c Level-0 table #8: 14789 bytes OK
+2026/02/07-07:32:42.090 178c Delete type=0 #4

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhatsApp Bot Web</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; margin: 20px; }
+    #qr { margin: 20px auto; width: 300px; height: 300px; }
+    #messages { max-width: 600px; margin: 20px auto; text-align: left; }
+    .msg { border-bottom: 1px solid #ddd; padding: 5px; }
+    .msg img { max-width: 200px; display: block; margin-top: 5px; }
+  </style>
+</head>
+<body>
+  <h1>WhatsApp Bot</h1>
+  <p id="status">Csatlakozás...</p>
+  <div id="qr"></div>
+
+  <h2>Bejövő üzenetek</h2>
+  <div id="messages"></div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    const socket = io();
+    const qrDiv = document.getElementById("qr");
+    const status = document.getElementById("status");
+    const messagesDiv = document.getElementById("messages");
+
+    // QR kód esemény
+    socket.on("qr", qr => {
+      status.textContent = "📱 Olvasd be a QR kódot a WhatsApp alkalmazással!"
+      qrDiv.innerHTML = `<img src="https://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(qr)}&size=300x300" />`;
+    });
+
+    // Ready esemény
+    socket.on("ready", () => {
+      status.textContent = "✅ WhatsApp csatlakozott!";
+      qrDiv.innerHTML = "";
+    });
+
+    // Bejövő üzenetek
+    socket.on("message", data => {
+      const div = document.createElement("div");
+      div.classList.add("msg");
+      div.innerHTML = `<strong>${data.from}:</strong> ${data.body}`;
+      if (data.media) {
+        div.innerHTML += `<img src="${data.media}" />`;
+      }
+      messagesDiv.prepend(div); // legújabb felül
+    });
+  </script>
+</body>
+</html>

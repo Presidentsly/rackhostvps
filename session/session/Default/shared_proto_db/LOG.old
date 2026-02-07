@@ -1,2 +1,3 @@
-2026/02/04-11:58:51.665 19ec Creating DB C:\whatsappv2\session\session\Default\shared_proto_db since it was missing.
-2026/02/04-11:58:51.686 19ec Reusing MANIFEST C:\whatsappv2\session\session\Default\shared_proto_db/MANIFEST-000001
+2026/02/07-07:31:42.167 4d0 Reusing MANIFEST C:\whatsappv2\session\session\Default\shared_proto_db/MANIFEST-000001
+2026/02/07-07:31:42.168 4d0 Recovering log #3
+2026/02/07-07:31:42.168 4d0 Reusing old log C:\whatsappv2\session\session\Default\shared_proto_db/000003.log 
