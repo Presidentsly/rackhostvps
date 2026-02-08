@@ -13,7 +13,7 @@ tmp/
 *.tmp
 
 # WhatsApp session (NAGYON FONTOS)
-session/
+# session/
 
 # Environment változók
 .env
